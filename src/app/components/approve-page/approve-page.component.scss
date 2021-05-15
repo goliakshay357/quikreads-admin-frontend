@@ -1,0 +1,26 @@
+
+
+.container{
+  padding: 0 14% 0 14%;
+  margin-top: 30px;
+}
+
+//button{
+//  background-color: #ece2e2;
+//  height: 60px;
+//  border-radius: 14px;
+//  border: transparent;
+//  margin: 3px;
+//}
+
+.card{
+ vertical-align: center;
+  border-radius: 15px;
+  padding: 10px;
+  display: grid;
+  min-height: 90px;
+  background-color: rgba(255, 255, 255, 0.9);
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+  margin-bottom: 30px;
+}
