@@ -9,6 +9,9 @@ export class ApprovePageComponent implements OnInit {
 
   constructor() { }
 
+  bookItems: any = [{bookTitle: 'Harry Potter', author: 'JK Rowling', category: ['fiction', 'Novel'] },
+    {bookTitle: 'Harry Potter', author: 'JK Rowling', category: ['fiction', 'Novel'] }];
+
   ngOnInit(): void {
   }
 

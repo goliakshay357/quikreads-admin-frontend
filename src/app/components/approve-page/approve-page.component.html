@@ -1,16 +1,23 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">
 <div class="container">
-  <div class="card">
-    <h3>Harry Potter</h3>
-    <h3>J.K. Rowling</h3>
-    <h3>Fantasy</h3>
-    <button class="btn btn-outline-primary">Approved</button>
-    <button>Rejected</button>
+  <h1 class="text-center">QuikReads</h1>
+
+  <div class="card shadow ">
+    <h3 class="my-auto">The Godfather</h3>
+    <h3 class="my-auto">Mario Puzo</h3>
+    <h3 class="my-auto">Fiction</h3>
+    <button class="btn btn-success btn-lg my-auto">Approved</button>
+    <button class="btn btn-danger btn-lg my-auto">Rejected</button>
   </div>
-  <div class="card">
-    <h3>Perks of being a wallflower</h3>
-    <h3>J.K. Rowling</h3>
-    <h3>Fantasy</h3>
-    <button>Approved</button>
-    <button>Rejected</button>
+  <div class="card shadow " *ngFor="let book of bookItems">
+    <h3 class="my-auto">{{book.bookTitle}}</h3>
+    <h3 class="my-auto">{{book.author}}</h3>
+    <h3 class="my-auto" >
+      <span *ngFor="let category of book.category">{{category}}    </span>
+    </h3>
+    <button class="btn btn-success btn-lg my-auto">Approved</button>
+    <button class="btn btn-danger btn-lg my-auto">Rejected</button>
   </div>
+
 </div>
